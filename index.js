@@ -1,5 +1,12 @@
 
-const app = require('express')();   //function represents API were building
+//const app = require('express')();   //function represents API were building
+
+/*Refactor code to make a var for express */
+const express = require('express');
+const app = express();
+
+app.use( express.json() )    /* Middleware converts body => json */
+
 const PORT = 8080;
 
 
